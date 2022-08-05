@@ -8,42 +8,62 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class TimeDataLesson {
 
-@Test
-    void test01(){
-    // Сейчас = 2019-02-22T09:49:19.275039200
-    LocalDateTime time = LocalDateTime.now();
-    System.out.println("Сейчас = " + time);
-    System.out.println("=======");
+    @Test
+    void test01() {
+        // Сейчас = 2019-02-22T09:49:19.275039200
+        LocalDateTime time = LocalDateTime.now();
+        System.out.println("Сейчас = " + time);
+        System.out.println("=======");
 
-    Instant instant0 = Instant.now();
-    instant0.toEpochMilli();
-    System.out.println(instant0);
-}
+        Instant instant0 = Instant.now();
+        instant0.toEpochMilli();
+        System.out.println(instant0);
 
-@Test
-    void test02(){
-    Calendar c = Calendar.getInstance();
+    }
 
-    Long epoch = System.currentTimeMillis();
-    c.setTimeInMillis(epoch);
-    c.add(Calendar.DATE,1);
-    Long epochPlus = c.getTimeInMillis();
-    System.out.println(epoch);
-    System.out.println("===="+epochPlus);
+    @Test
+    void test02() {
+        Calendar c = Calendar.getInstance();
 
-    Date date = new Date();
+        Long epoch = System.currentTimeMillis();
+        c.setTimeInMillis(epoch);
+        c.add(Calendar.DATE, 1);
+        Long epochPlus = c.getTimeInMillis();
+        System.out.println(epoch);
+        System.out.println("====" + epochPlus);
 
-    c.setTime(date);
-    c.add(Calendar.DATE, 1);
-    Date nextDate = c.getTime();
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    String td = dateFormat.format(nextDate);
-    System.out.println(td);
+        Date date = new Date();
+
+        c.setTime(date);
+        c.add(Calendar.DATE, 1);
+        Date nextDate = c.getTime();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String td = dateFormat.format(nextDate);
+        System.out.println(td);
 
 
-}
+    }
+
+    @Test
+    void test03() {
+        Long epoch = System.currentTimeMillis();
+        Date date = new Date(epoch);
+        SimpleDateFormat format = new SimpleDateFormat("MMMM YYYY");
+        String d = format.format(date);
+        System.out.println(d);
+    }
+
+    @Test
+    void test04(){
+        Long epoch = System.currentTimeMillis();
+        Date date = new Date(epoch);
+        SimpleDateFormat format = new SimpleDateFormat("LLLL YYYY", Locale.getDefault());
+        String d = format.format(date);
+        System.out.println(d);
+    }
 
 }
