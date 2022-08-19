@@ -1,9 +1,11 @@
 package sortComporator;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import io.restassured.http.ContentType;
+import org.junit.jupiter.api.DisplayName;
+
+import java.util.*;
+
+import static io.restassured.RestAssured.given;
 
 public class Test {
     public static void main(String[] args) {
@@ -41,5 +43,6 @@ public class Test {
         List<Car> carList1 = new ArrayList<>(Arrays.asList(carArray));
         System.out.println(carList1);
         }
+
     }
 
