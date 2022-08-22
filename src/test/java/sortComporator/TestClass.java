@@ -1,13 +1,12 @@
 package sortComporator;
 
-import io.restassured.http.ContentType;
-import org.junit.jupiter.api.DisplayName;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
-import static io.restassured.RestAssured.given;
 
-public class Test {
+public class TestClass {
     public static void main(String[] args) {
 
         List<Car> list = new ArrayList<>();
@@ -44,5 +43,14 @@ public class Test {
         System.out.println(carList1);
         }
 
-    }
+
+        @Test
+     void test91(){
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", "Alex");
+        map.put("surname", "Yegorov");
+        map.put("age", 24);
+        }
+
+            }
 

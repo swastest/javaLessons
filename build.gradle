@@ -75,4 +75,5 @@ task demowebshop(type: Test) {
     }
 }
 
- */
+ */ sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
