@@ -1,0 +1,87 @@
+{
+  "id": 1277,
+  "address": {
+    "id": 240,
+    "city": {
+      "id": 30,
+      "name": "Санкт-Петербург",
+      "fiasId": "c2deb16a-0330-4f05-821f-1d09c93331e6",
+      "priceForHour": 700.00,
+      "discountList": [
+        {
+          "id": 6,
+          "startHour": 1,
+          "endHour": 2,
+          "percent": 10
+        },
+        {
+          "id": 7,
+          "startHour": 3,
+          "endHour": 5,
+          "percent": 20
+        }
+      ],
+      "region": {
+        "id": 24,
+        "name": "Волга"
+      },
+      "cityAdmins": [],
+      "latitude": null,
+      "longitude": null
+    },
+    "address": "Петергофское шоссе, д 2",
+    "street": "Петергофское шоссе",
+    "fiasId": "146a0f57-9307-4805-8605-8189fa8510e7",
+    "houseNumber": "д 2",
+    "isDetached": true,
+    "entrance": null,
+    "flatNumber": null,
+    "floor": null,
+    "intercomNumber": null,
+    "latitude": 59.845171,
+    "longitude": 30.203947,
+    "user": {
+      "id": 617,
+      "surname": "Приветовна-Казаова",
+      "name": "Аделаида-Привет",
+      "patronymic": null,
+      "city": {
+        "id": 43,
+        "name": "Ростов-на-Дону",
+        "fiasId": "c1cfe4b9-f7c2-423c-abfa-6ed1c05a15c5",
+        "priceForHour": 500.00,
+        "cityAdmins": [],
+        "latitude": 47.222531,
+        "longitude": 39.718705
+      },
+      "email": "aaa@aaa.rq",
+      "phone": "+79055555555",
+      "contractAgreed": true,
+      "executorStatus": null,
+      "executorRating": null,
+      "role": "ROLE_CLIENT",
+      "language": "RUSSIAN",
+      "photoUrl": null,
+      "addressLatitude": null,
+      "addressLongitude": null
+    },
+    "default": true
+  },
+  "comment": "",
+  "price": 700.00,
+  "date": "2022-08-25",
+  "beginHour": 23,
+  "duration": 1,
+  "endHour": 0,
+  "executor": null,
+  "status": "EXECUTOR_NOT_FOUND",
+  "createdAt": "2022-08-25T13:48:46.331Z",
+  "updatedAt": "2022-08-25T13:48:46.449Z",
+  "executorFoundTime": null,
+  "confirmationUrl": null,
+  "executorConfirmed": false,
+  "executorConfirmTimerStartTime": null,
+  "executorSalary": 462.00,
+  "reviewProcessingStatus": null,
+  "processingUser": null
+}
