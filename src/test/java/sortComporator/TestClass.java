@@ -44,6 +44,7 @@ public class TestClass {
         // потом переключиться
         List<Car> carList1 = new ArrayList<>(Arrays.asList(carArray));
         System.out.println(carList1);
+
     }
 
 
