@@ -19,4 +19,14 @@ public class For {
             System.out.println("Hello " + i);
         }
     }
+
+    @Test
+    void test03(){
+        String s = "Привет";
+        String result = "";
+        for(int i = s.length()-1; i>=0; i--){
+           result = result+s.charAt(i);
+        }
+        System.out.println(result);
+    }
 }

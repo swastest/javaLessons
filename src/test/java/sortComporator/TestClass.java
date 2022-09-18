@@ -1,11 +1,8 @@
 package sortComporator;
 
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
-import java.util.function.BooleanSupplier;
 
 
 public class TestClass {
@@ -17,6 +14,7 @@ public class TestClass {
         list.add(new Car(1997, "Lada"));
         list.add(new Car(2010, "BMW"));
         list.add(new Car(2015, "Acura"));
+        list.add(new Car(2020, "Reno"));
         list.add(new Car(2020, "Reno"));
 
         Collections.sort(list, new SortByYear());

@@ -1,4 +1,4 @@
-package whiteRabbit;
+package whiteRabbit.enums;
 
 public enum Music {
     POP("Поп"),

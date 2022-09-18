@@ -19,7 +19,7 @@ public class ArrayListLessonClass {
         collection.remove(2);
         Iterator iterator = collection.iterator();
         for(Object i : collection){
-            System.out.println(i);
+            System.out.println("========"+i);
         }
 
         Map map = new HashMap<>();

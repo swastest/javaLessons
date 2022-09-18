@@ -17,7 +17,7 @@ public class TestLambdaClass {
         listAnimal.add(a3);
         listAnimal.add(a4);
 
-        print(listAnimal,x->x.canSwim());
+        print(listAnimal,x->x.canHopper());
 
     }
 
