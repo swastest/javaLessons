@@ -1,5 +1,8 @@
 package sortComporator;
 
+
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
@@ -35,6 +38,10 @@ public class TestClass {
         Car car2 = new Car(50, "Бмодель");
         Car car3 = new Car(67, "Жмодель");
         Car car4 = new Car(3, "Амодель");
+        Car car5 = new Car(100, "Фмодель");
+
+        ///Ниже сравнение классов
+        Assertions.assertTrue(EqualsBuilder.reflectionEquals(car1,car5));
 
         //Можно засунуть объекты классов в массив тоже
         Car[] carArray = {car1, car2, car4, car3};
@@ -42,6 +49,7 @@ public class TestClass {
         // потом переключиться
         List<Car> carList1 = new ArrayList<>(Arrays.asList(carArray));
         System.out.println(carList1);
+
 
     }
 
@@ -53,6 +61,15 @@ public class TestClass {
         map.put("surname", "Yegorov");
         map.put("age", 24);
 
+        Map<String, Object> map1 = new HashMap<>();
+        map1.put("name", "Alex");
+        map1.put("surname", "Yegorov");
+        map1.put("age", 24);
+
+        Assertions.assertEquals(map1,map);
+        Assertions.assertTrue(map.equals(map1));
+        //Ниже сравнение через Билдер - позволяет сравнивать классы возвращает булево
+        Assertions.assertTrue(EqualsBuilder.reflectionEquals(map1,map));
 
     }
 
