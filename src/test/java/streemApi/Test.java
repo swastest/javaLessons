@@ -4,7 +4,9 @@ package streemApi;
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println(	test("Hello World", 'd'));
+        System.out.println(	test("Hello World", '\u0000'));
+        System.out.println(count("папа","п"));
+        System.out.println(count("Hello World", "l"));
 
     }
 
@@ -12,7 +14,7 @@ public class Test {
         String h= String.valueOf(b);
 
         int g =0;
-        if(h== ""){
+        if(b== '\u0000'){
             System.out.println("Введите знач-е");
         }
         else if (h!=""){
@@ -24,4 +26,10 @@ public class Test {
         }
         return g;
     }
+
+
+        public static int count(String str, String target) {
+            return (str.length() - str.replace(target, "").length()) / target.length();
+        }
+
 }
